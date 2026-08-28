@@ -1,4 +1,5 @@
-#Urban-Nest-revenue-Investigation:
+# Urban-Nest-revenue-Investigation:
+
 In this project i have Investigated why Revenue dropped by 15% in September:
 It an end-to-end analytics engineering project on Microsoft Fabric, investigating a 15% September revenue decline for a retail business. (I got this project idea from realanalystjobs.com competition it was there first
 competition challenge)
