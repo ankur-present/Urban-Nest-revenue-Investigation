@@ -1,5 +1,4 @@
-<img width="1920" height="1080" alt="fabric app screenshot" src="https://github.com/user-attachments/assets/eade08e4-72af-4044-8cfa-0f40f5542f17" />
-<img width="1920" height="1080" alt="urban nest bronze layer" src="https://github.com/user-attachments/assets/b05223e2-dd94-4bee-8765-bf1e98794479" />
+
 # Urban-Nest-revenue-Investigation
 In this project i have Investigated why Revenue dropped by 15% in September:
 It an end-to-end analytics engineering project on Microsoft Fabric, investigating a 15% September revenue decline for a retail business. (I got this project idea from realanalystjobs.com competition it was there first
@@ -29,5 +28,9 @@ Microsoft Fabric (Lakehouse, Data Pipelines, Notebooks) · PySpark · Delta Lake
 
 <img width="1920" height="1080" alt="urbannestgold star schema" src="https://github.com/user-attachments/assets/8eef36f3-b038-43eb-9259-8498b6e76d31" />
 <img width="1920" height="1080" alt="microsoft fabric" src="https://github.com/user-attachments/assets/1ad32a10-c5d8-431f-b3d0-5302f2b8b773" />
+Dashboard: 
+<img width="1920" height="1080" alt="fabric app screenshot" src="https://github.com/user-attachments/assets/eade08e4-72af-4044-8cfa-0f40f5542f17" />
+Bronze layer
+<img width="1920" height="1080" alt="urban nest bronze layer" src="https://github.com/user-attachments/assets/b05223e2-dd94-4bee-8765-bf1e98794479" />
 
 
