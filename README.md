@@ -14,6 +14,16 @@ Before acting on that assumption, this project verifies whether the decline is r
 
 Architecture
 
-Built entirely on Microsoft Fabric, using a medallion (Bronze → Silver → Gold) architecture:<img width="1920" height="1080" alt="microsoft fabric" src="https://github.com/user-attachments/assets/1ad32a10-c5d8-431f-b3d0-5302f2b8b773" />
+Built entirely on Microsoft Fabric, using a medallion (Bronze → Silver → Gold) architecture:
+Bronze layer - Raw CSV ingestion via a Fabric Data Pipeline, landed as Delta tables with _ingested_at / _source_file audit columns for lineage
+Silver layer - PySpark notebook: deduplication, type casting, null handling, discount-code standardization, with before/after data-quality logging ( i do not know pyspark yet i used ai for it, and i ivestigated the data using pandas , i know pandas, and python properly)
+Gold - Star schema — fact_orders with dim_customer, dim_product, dim_date 
+Semantic Model - Fabric semantic model with 11 DAX measures over Gold 
+Automation - 	Scheduled pipeline (2 AM daily) chained to the Silver/Gold notebook via success dependencies, followed by a scheduled semantic model refresh (3 AM)
+<img width="1920" height="1080" alt="urbannestgold star schema" src="https://github.com/user-attachments/assets/8eef36f3-b038-43eb-9259-8498b6e76d31" />
+<img width="1920" height="1080" alt="microsoft fabric" src="https://github.com/user-attachments/assets/1ad32a10-c5d8-431f-b3d0-5302f2b8b773" />
+Tech Stack
+
+Microsoft Fabric (Lakehouse, Data Pipelines, Notebooks) · PySpark · Delta Lake · Dimensional Modeling (Star Schema) · Power BI · DAX · Data Quality Validation
 
 
